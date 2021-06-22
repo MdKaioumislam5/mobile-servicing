@@ -12,22 +12,25 @@ const ServiceAdd = () => {
 
     const onSubmit = (data) => {
         // data.image = loggedInUser.photoURL;
-        // console.log("added ", data);
+        console.log("added ", data);
 
-        // fetch('http://localhost:3011/addServiceItem', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
+        fetch('http://localhost:5000/addServices', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
 
-        // })
-        //     .then(res => res.json())
-        //     .then(result => {
-        //         if (result) {
-        //             alert('Your Service added successfully');
-        //         }
-        //     })
+        })
+            .then(res => res.json())
+            .then(result => {
+                if (result) {
+                    alert('Your Service added successfully');
+                    history.push('/dashboard')
+                    history.push('/dashboard/serviceAdd')
+
+                }
+            })
 
     }
     return (
