@@ -3,7 +3,7 @@ import React from 'react';
 const Testimonial = (props) => {
     const { quote, name, from, img } = props.testimonial;
     return (
-        <div className="container shadow-sm">
+        <div style={{width:'350px'}} className=" shadow-sm bg-info m-3">
             <div className="card-body">
                 <div className="card-footer">
                     <img className="text-item-center" src={img} alt="" width="60" />

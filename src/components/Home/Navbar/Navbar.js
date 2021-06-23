@@ -16,7 +16,7 @@ const Navbar = () => {
                 <ul class="navbar-nav ms-auto text-white h2">
                     <li class="nav-item active  mr-5">
                         {/* <a class="nav-link mr-5" href="#">Home</a> */}
-                        <Link className="nav-link mr-5 ml-5 text-white" to="/home">Home</Link>
+                        <Link className="nav-link mr-5 ml-5 text-white" to="">Home</Link>
                     </li>
                     <li class="nav-item">
                         {/* <a class="nav-link mr-5" href="#">About</a> */}

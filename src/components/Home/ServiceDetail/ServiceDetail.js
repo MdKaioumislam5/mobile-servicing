@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faTools, faUserAlt, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 const ServiceDetail = ({ services }) => {
-    console.log(services);
+    // console.log(services);
     return (
         <div className="col-md-4 text-center m-3 border bg-info p-5 text-white">
             <FontAwesomeIcon variant="top" style={{ width: '150px', height: '150px', borderRadius: '50%', margin: 'auto', marginTop: '15px' }} icon={faTools} />

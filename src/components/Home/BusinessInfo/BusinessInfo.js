@@ -23,12 +23,12 @@ const infosData = [
 ]
 const BusinessInfo = () => {
     return (
-        <section className="justify-content-center">
+        <section className="justify-content-center mt-5">
               <div className="text-center">
                 <h5 style={{ color: '#1CC7C1' }}>Projects</h5>
                 <h2>First Repair Your Smart Phone</h2>
             </div>
-            <div className="w-75 row">
+            <div className="w-75 m-auto row">
                 {
                     infosData.map(info => <InfoCard info={info} key={info.title}></InfoCard>)
                 }

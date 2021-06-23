@@ -1,10 +1,16 @@
 import React from 'react';
 
-const AdminCard = () => {
+const AdminCard = ({ data }) => {
+    // console.log('adminCard', data);
     return (
-        <div>
-            
-        </div>
+
+        <tr>
+            <td>#</td>
+            <td>{data?.name}</td>
+            <td>{data?.email}</td>
+            <td>{data?.password}</td>
+        </tr>
+
     );
 };
 

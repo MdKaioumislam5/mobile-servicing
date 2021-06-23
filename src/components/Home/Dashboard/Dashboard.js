@@ -12,14 +12,16 @@ import ServiceAdd from '../Service/ServiceAdd';
 // import AddProduct from '../../allServices/AddService';
 import Sidebar from '../Sidebar/Sidebar';
 import AddReview from '../Review/AddReview';
-import AddAdmin from '../Admin/AddAdmin';
+import AdminPanel from '../Admin/AdminPanel';
+import Admin from '../Admin/Admin';
+// import AddAdmin from '../AddAmin/AddAdmin'
+// import AddAdmin from '../Admin/AddAdmin';
+// import AddAdmin from '../Admin/AddAdmin';
 const Dashboard = () => {
     return (
         <div>
             <Router>
-
                 <div className="d-flex">
-
                     <div className="col-md-2 bg-danger">
                         <Sidebar></Sidebar>
                     </div>
@@ -32,21 +34,16 @@ const Dashboard = () => {
                             <Route path="/dashboard/addReview">
                                 <AddReview></AddReview>
                             </Route>
-                            <Route path="">
-                                <AddReview></AddReview>
+                            <Route path="/dashboard/adminPanel">
+                                <AdminPanel></AdminPanel>
                             </Route>
-                            <Route path="">
-                                <AddReview></AddReview>
+                            <Route path="/dashboard/adminList">
+                                <Admin></Admin>
                             </Route>
-                            <Route path="/dashboard/addAdmin">
-                                <AddAdmin></AddAdmin>
-                            </Route>
+
                         </Switch>
-
                     </div>
-
                 </div>
-
             </Router>
         </div>
     );
