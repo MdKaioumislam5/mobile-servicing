@@ -8,7 +8,7 @@ const AdminPanel = () => {
     const onSubmit = (data) => {
         // data.image = loggedInUser.photoURL;
         console.log("added ", data);
-        fetch('http://localhost:5000/addAdminPanel', {
+        fetch('https://serene-woodland-17548.herokuapp.com/addAdminPanel', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

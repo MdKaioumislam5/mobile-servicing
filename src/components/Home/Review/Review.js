@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import ReviewCard from './ReviewCard';
 const Review = () => {
     const [review, setReview] = useState([]);
-    console.log('added', review);
+    // console.log('added', review);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getReview')
+        fetch('https://serene-woodland-17548.herokuapp.com/getReview')
             .then(res => res.json())
             .then(data => {
                 setReview(data);

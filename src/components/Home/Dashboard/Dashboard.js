@@ -7,16 +7,12 @@ import {
     useParams
 } from "react-router-dom";
 import ServiceAdd from '../Service/ServiceAdd';
-// import Sidebar from '../Sidebar/Sidebar';
-// import './Dashboard.css';
-// import AddProduct from '../../allServices/AddService';
 import Sidebar from '../Sidebar/Sidebar';
 import AddReview from '../Review/AddReview';
 import AdminPanel from '../Admin/AdminPanel';
 import Admin from '../Admin/Admin';
-// import AddAdmin from '../AddAmin/AddAdmin'
-// import AddAdmin from '../Admin/AddAdmin';
-// import AddAdmin from '../Admin/AddAdmin';
+import PlaceOrder from '../PlaceOrder/PlaceOrder';
+import AllBookings from '../AllBookings/AllBookings';
 const Dashboard = () => {
     return (
         <div>
@@ -28,6 +24,10 @@ const Dashboard = () => {
 
                     <div className="col-md-10 bg-info">
                         <Switch>
+
+                            <Route path="/dashboard/placeOrder/:id">
+                                <PlaceOrder></PlaceOrder>
+                            </Route>
                             <Route path="/dashboard/serviceAdd">
                                 <ServiceAdd></ServiceAdd>
                             </Route>
@@ -40,6 +40,10 @@ const Dashboard = () => {
                             <Route path="/dashboard/adminList">
                                 <Admin></Admin>
                             </Route>
+                            <Route path="/dashboard/allBookings">
+                                <AllBookings></AllBookings>
+                            </Route>
+
 
                         </Switch>
                     </div>

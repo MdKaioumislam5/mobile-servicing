@@ -14,7 +14,7 @@ const ServiceAdd = () => {
         // data.image = loggedInUser.photoURL;
         console.log("added ", data);
 
-        fetch('http://localhost:5000/addServices', {
+        fetch('https://serene-woodland-17548.herokuapp.com/addServices', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

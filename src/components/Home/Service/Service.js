@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import network from '../../../images/network.png';
-import service from '../../../images/service.png';
-import setting from '../../../images/setting.png';
 import ServiceDetail from '../ServiceDetail/ServiceDetail';
 
 
@@ -10,7 +7,7 @@ const Service = () => {
     const [service, setService] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getServices')
+        fetch('https://serene-woodland-17548.herokuapp.com/getServices')
             .then(res => res.json())
             .then(data => {
                 setService(data);

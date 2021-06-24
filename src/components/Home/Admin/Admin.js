@@ -7,7 +7,7 @@ const Admin = () => {
     // console.log('added', admin);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getAdminPanel')
+        fetch('https://serene-woodland-17548.herokuapp.com/getAdminPanel')
             .then(res => res.json())
             .then(data => {
                 setAdmin(data);

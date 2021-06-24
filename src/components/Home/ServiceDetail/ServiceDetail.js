@@ -1,8 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faTools, faUserAlt, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
 
 const ServiceDetail = ({ services }) => {
+    const id = services._id;
+    console.log('product id', id);
     // console.log(services);
     return (
         <div className="col-md-4 text-center m-3 border bg-info p-5 text-white">
@@ -12,7 +16,7 @@ const ServiceDetail = ({ services }) => {
                 <h4 className="mt-3  p-3">{services?.description}</h4>
                 <h2 className="mt-3 m-3 p-3">Price:{services?.price} $</h2>
             </div>
-            <button className="btn btn-warning mt-5 w-50">Book Now</button>
+            <Link to={`/dashboard/placeOrder/${id}`} variant="primary"> <button className="btn btn-primary" type=""> Click To Book</button> </Link>
         </div>
     );
 };
