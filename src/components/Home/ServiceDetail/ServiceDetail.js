@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const ServiceDetail = ({ services }) => {
     const id = services._id;
-    console.log('product id', id);
+    // console.log('product id', id);
     // console.log(services);
     return (
         <div className="col-md-4 text-center m-3 border bg-info p-5 text-white">

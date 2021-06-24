@@ -34,7 +34,7 @@ const ServiceAdd = () => {
     return (
         <div>
             <form className="mt-5 bg-primary p-5" onSubmit={handleSubmit(onSubmit)}>
-            <h1 className="text-white">Add New Review YY</h1>
+            <h1 className="text-white">Add New Review</h1>
 
                 <div className="form-group">
                     <h4 className="text-white">Reviewers Name</h4>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BookingsCard = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
         <tr>
             <td>{props?.count}</td>

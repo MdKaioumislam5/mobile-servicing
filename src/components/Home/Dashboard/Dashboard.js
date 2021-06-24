@@ -13,6 +13,7 @@ import AdminPanel from '../Admin/AdminPanel';
 import Admin from '../Admin/Admin';
 import PlaceOrder from '../PlaceOrder/PlaceOrder';
 import AllBookings from '../AllBookings/AllBookings';
+import AllServices from '../Service/AllServices';
 const Dashboard = () => {
     return (
         <div>
@@ -43,8 +44,9 @@ const Dashboard = () => {
                             <Route path="/dashboard/allBookings">
                                 <AllBookings></AllBookings>
                             </Route>
-
-
+                            <Route path="/dashboard/allServices">
+                                <AllServices></AllServices>
+                            </Route>
                         </Switch>
                     </div>
                 </div>
