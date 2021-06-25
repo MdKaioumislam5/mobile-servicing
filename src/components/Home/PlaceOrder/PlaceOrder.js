@@ -2,8 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import { useHistory, useParams } from 'react-router-dom';
 
-// import { userContext } from '../../../App';
-
 const PlaceOrder = () => {
     const history = useHistory();
     const { id } = useParams();

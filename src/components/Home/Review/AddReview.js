@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useHistory } from 'react-router-dom';
 
-// import { userContext } from '../../App';
 
 const ServiceAdd = () => {
     const history = useHistory();

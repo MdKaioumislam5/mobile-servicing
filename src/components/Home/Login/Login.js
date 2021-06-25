@@ -31,16 +31,6 @@ const Login = () => {
                 history.replace(from);
             })
 
-
-
-
-            // .then(function(result) {
-            //     const {displayName, email} = result.user;
-            //     const signedInUser = {name: displayName, email} 
-            //     setLoggedInUser(signedInUser);
-            //     history.replace(from);
-            //     // ...
-            //   })
             .catch(function (error) {
                 const errorMessage = error.message;
                 console.log(errorMessage);
